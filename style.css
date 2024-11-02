@@ -1,0 +1,47 @@
+.container {
+    text-align: center; /* Center-aligns content within the container */
+}
+p {
+    padding: 10px 10px; /* Vertical and horizontal padding */
+    background-color:#66ff66; /* Background color for the oval */
+    color: black; /* Text color */
+    border-radius: 50px; /* Makes the shape oval */
+    font-size: 20px; /* Font size */
+      max-width: 380px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+   
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00cc44;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+img
+{
+    align-content: center;
+}
+.submit-button {
+            display: inline-block; /* Makes the anchor behave like a block element */
+            padding: 10px 20px; /* Spacing inside the button */
+            font-size: 16px; /* Font size of the button text */
+            color: black; /* Text color */
+            background-color: #33ff33; /* Background color */
+            border: none; /* Remove border */
+            border-radius: 20px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            cursor: pointer; /* Change cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .button:hover {
+            background-color: #66ff66; /* Darker shade on hover */
+        }

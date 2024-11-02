@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your weird mate</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>your weird mate?</h1>
+    <div class="quiz-container" id="quiz">
+        <!-- Weirdness Meter -->
+        <div class="meter">
+            <div class="meter-bar" id="meter-bar"></div>
+        </div>
+
+        <!-- Questions -->
+        <div class="question">
+            <p>1.Are you a cat person ?</p>
+            <button onclick="addScore(10)">Yes</button>
+            <button onclick="addScore(5)">Sometimes</button>
+            <button onclick="addScore(0)">Never</button>
+        </div>
+        <div class="question">
+            <p>2. do you like annoying others ?</p>
+            <button onclick="addScore(10)">Yes</button>
+            <button onclick="addScore(5)">Sometimes</button>
+            <button onclick="addScore(0)">Never</button>
+        </div>
+        <div class="question">
+            <p>3. do you like collecting stuffs?</p>
+            <button onclick="addScore(10)">Yes</button>
+            <button onclick="addScore(5)">Sometimes</button>
+            <button onclick="addScore(0)">Never</button>
+        </div>
+        <div class="question">
+            <p>3.do you like to try extreme things?</p>
+            <button onclick="addScore(10)">Yes</button>
+            <button onclick="addScore(5)">Sometimes</button>
+            <button onclick="addScore(0)">Never</button>
+        </div>
+        <div class="question">
+            <p>3. do you really like fancy items?</p>
+            <button onclick="addScore(10)">Yes</button>
+            <button onclick="addScore(5)">Sometimes</button>
+            <button onclick="addScore(0)">Never</button>
+        </div>
+
+        <!-- Result Button and Output -->
+        <button onclick="calculateWeirdness()">check</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>

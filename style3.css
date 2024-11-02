@@ -1,0 +1,125 @@
+/* Basic Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* New font for modern feel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: #00cc44; /* Gradient background */
+}
+
+/* Title styling */
+h1 {
+    color: #ffff; /* Darker shade for better visibility */
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 30px; /* Increased spacing */
+    text-align: center; /* Center align */
+    letter-spacing: 1px; /* Slightly spaced out letters */
+    text-transform: uppercase; /* Uppercase letters for emphasis */
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: white;
+    padding: 40px; /* More padding for spacious feel */
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    max-width: 500px; /* Wider container */
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Quiz Container hover effect */
+.quiz-container:hover {
+    transform: translateY(-10px); /* More noticeable lift on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Question */
+.question {
+    margin-bottom: 20px; /* Increased spacing between questions */
+    font-size: 1.2em; /* Increased font size for better readability */
+    color: #555; /* Softer color for question text */
+}
+
+/* Buttons */
+button {
+    background-color:#99e699; /* Vibrant button color */
+    color: black;
+    padding: 15px 30px; /* Larger button size */
+    border: none;
+    border-radius: 25px; /* More rounded buttons */
+    cursor: pointer;
+    font-size: 1.1em; /* Increased font size */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow for buttons */
+}
+
+button:hover {
+    background-color: #5a54e1; /* Darker button color on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Downward movement on click */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+/* Weirdness Meter */
+.meter {
+    width: 100%;
+    height: 30px; /* Increased height for visibility */
+    background-color: #ffff; /* Softer meter background */
+    border-radius: 15px; /* Softer edges */
+    margin-bottom: 25px; /* Increased spacing */
+    overflow: hidden;
+    position: relative; /* For positioning the label */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+}
+
+.meter-bar {
+    height: 100%;
+    width: 0%; /* Will be set dynamically */
+    background-color: #5a54e1 ;/* Same as button color for consistency */
+    transition: width 0.4s ease-in-out; /* Smooth transition */
+}
+
+/* Result */
+#result {
+    margin-top: 30px; /* Increased top margin */
+    font-size: 1.6em; /* Increased font size for visibility */
+    color: #333; /* Darker color for text */
+    background-color: #fdfdfd; /* Very light background for contrast */
+    padding: 20px; /* Increased padding for result box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15); /* Light shadow for result box */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Result hover effect */
+#result:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 25px; /* Adjust padding */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Smaller title font size */
+    }
+
+    button {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    .meter {
+        height: 25px; /* Adjust meter height */
+    }
+}
